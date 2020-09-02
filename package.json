@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "set NODE_ENV=development react-scripts start",
+    "start": "set NODE_ENV=development && react-scripts start",
     "build": "NODE_ENV=production react-scripts build",
     "test": "NODE_ENV=development react-scripts test",
     "eject": "react-scripts eject",
@@ -26,6 +26,7 @@
     ]
   },
   "dependencies": {
+    "@material-ui/core": "^4.11.0",
     "antd": "^3.18.2",
     "axios": "^0.18.1",
     "jwt-decode": "^2.2.0",

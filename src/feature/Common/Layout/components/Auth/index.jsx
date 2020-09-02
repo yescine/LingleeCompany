@@ -7,11 +7,11 @@ export const Auth = ({ children }) => {
     <div className={style.authLayout}>
       <Row>
         <Col
-          xs={{ span: 14, offset: 5 }}
-          sm={{ span: 12, offset: 6 }}
-          md={{ span: 10, offset: 7 }}
-          lg={{ span: 8, offset: 8 }}
-          xl={{ span: 6, offset: 9 }}
+          xs={{ span: 14, offset: 3 }}
+          sm={{ span: 12, offset: 4 }}
+          md={{ span: 10, offset: 5 }}
+          lg={{ span: 8, offset: 6 }}
+          xl={{ span: 6, offset: 7 }}
         >
           {children}
         </Col>
