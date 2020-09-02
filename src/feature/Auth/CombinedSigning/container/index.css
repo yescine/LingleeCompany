@@ -76,6 +76,7 @@ body {
 .container--signup {
 	left: 0;
 	opacity: 0;
+	top: -25%;
 	width: 50%;
 	z-index: 1;
 }
@@ -185,7 +186,6 @@ body {
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-	padding: 0 3rem;
 	height: 100%;
 	text-align: center;
 }

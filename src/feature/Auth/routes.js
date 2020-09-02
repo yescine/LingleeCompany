@@ -2,11 +2,12 @@ import { SigninContainer } from "./Signin";
 import { SignupContainer } from "./Signup";
 import { RestorePasswordContainer } from "./RestorePassword";
 import { ConfirmRestorePasswordContainer } from "./ConfirmRestorePassword";
+import {CombinedSigning} from './CombinedSigning'
 
 export const routes = [
   {
     path: "/",
-    component: SigninContainer,
+    component: CombinedSigning, // SigninContainer,
     isAuth: false,
     exact: true
   },
