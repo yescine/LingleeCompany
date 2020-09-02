@@ -1,10 +1,12 @@
 import React from "react";
 import style from "./index.module.scss";
 import { Row, Col } from "antd";
+import SquareAnimation from '../../../../TestComponent/SquarePage'
 
 export const Auth = ({ children }) => {
   return (
     <div className={style.authLayout}>
+      <SquareAnimation />
       <Row>
         <Col
           xs={{ span: 14, offset: 3 }}

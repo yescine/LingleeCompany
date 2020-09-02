@@ -1,7 +1,7 @@
 import React from 'react'
 import SvgIcon from '../Auth/CombinedSigning/components/SvgIcon' 
 import {ReactComponent as LoginSvg} from '../../assets/img/signup.svg';
-import './test.scss'
+import './SquarePage.scss'
 function Index() {
    return (
       <div className="wrapper">
