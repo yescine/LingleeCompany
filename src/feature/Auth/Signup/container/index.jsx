@@ -27,6 +27,7 @@ const Signup = props => {
           isLoading={props.isLoading}
           isError={props.isError}
           errorMessage={props.errorMessage}
+          changePanel={props.changePanel}
         />
       )}
     </div>

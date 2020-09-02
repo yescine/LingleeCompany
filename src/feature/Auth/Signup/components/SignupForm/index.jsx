@@ -61,7 +61,7 @@ const SignupFormComponent = props => {
           Sing up
         </Button>
         <div className={style.singupLinks}>
-          <Link to="/">Sign in</Link> or{" "}
+          <Link onClick={props.changePanel}>Sign in</Link> or{" "}
           <Link to="/restore-password">Forgot password</Link>
         </div>
       </Form.Item>

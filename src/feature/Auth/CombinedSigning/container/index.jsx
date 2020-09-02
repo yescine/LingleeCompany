@@ -3,6 +3,9 @@ import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 import { SigninContainer as SigninForm } from "../../Signin";
 import {SignupContainer as SignupForm} from '../../Signup'
+import {ReactComponent as SignupSvg} from '../../../../assets/img/signup.svg';
+import {ReactComponent as SigninSvg} from '../../../../assets/img/signin.svg';
+import {Typography} from '@material-ui/core'
 import './index.css'
 
 const panel = ['right-panel-active','left-panel-active']
@@ -20,22 +23,26 @@ export const CombinedSigning = (props) => {
     <div className={switchStyle.join(' ')}>
 			{/* <!-- Sign Up --> */}
 			<div className="container__form container--signup form">
-					<SignupForm/>
+				<SignupForm changePanel={handleSwitchPanel}/>
 			</div>
 
 			{/* <!-- Sign In --> */}
 			<div className="container__form container--signin">
-				<SigninForm/>
+				<SigninForm changePanel={handleSwitchPanel}/>
 			</div>
 
 			{/* <!-- Overlay --> */}
 			<div className="container__overlay">
 				<div className="overlay">
 					<div className="overlay__panel overlay--left">
-						<button onClick={handleSwitchPanel} className="btn" id="signIn">Sign In</button>
+						<SignupSvg/>
+						<Typography variant="caption" >X company all right reserved</Typography>
+						{/* <button onClick={handleSwitchPanel} className="btn" id="signIn">Sign In</button> */}
 					</div>
 					<div className="overlay__panel overlay--right">
-						<button onClick={handleSwitchPanel}  className="btn" id="signUp">Sign Up</button>
+						<SigninSvg/>
+						<Typography variant="caption" >X company all right reserved</Typography>
+						{/* <button onClick={handleSwitchPanel}  className="btn" id="signUp">Sign Up</button> */}
 					</div>
 				</div>
 			</div>

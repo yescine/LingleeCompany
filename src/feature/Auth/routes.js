@@ -3,6 +3,7 @@ import { SignupContainer } from "./Signup";
 import { RestorePasswordContainer } from "./RestorePassword";
 import { ConfirmRestorePasswordContainer } from "./ConfirmRestorePassword";
 import {CombinedSigning} from './CombinedSigning'
+import Test from '../TestComponent/Test'
 
 export const routes = [
   {
@@ -26,6 +27,12 @@ export const routes = [
   {
     path: "/confirm-restore-password/:token",
     component: ConfirmRestorePasswordContainer,
+    isAuth: false,
+    exact: true
+  },
+  {
+    path: "/test",
+    component: Test,
     isAuth: false,
     exact: true
   }

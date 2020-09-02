@@ -58,7 +58,7 @@ const SigninFormComponent = props => {
           Sign in
         </Button>
         <div className={style.singupLinks}>
-          <Link to="/signup">Create accaunt</Link> or{" "}
+          <Link onClick={props.changePanel}>Create accaunt</Link> or{" "}
           <Link to="/restore-password">Forgot password</Link>
         </div>
       </Form.Item>

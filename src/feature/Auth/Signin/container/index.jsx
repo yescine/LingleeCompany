@@ -6,8 +6,6 @@ import { connect } from "react-redux";
 import { signinRequest } from "../actions";
 import { withRouter } from "react-router-dom";
 
-const panel = ['right-panel-active','left-panel-active']
-
 const Signin = props => {
   useEffect(() => {
     props.isAuth && props.history.push("/home");
@@ -20,6 +18,7 @@ const Signin = props => {
         isLoading={props.isLoading}
         isError={props.isError}
         errorMessage={props.errorMessage}
+        changePanel={props.changePanel}
       />
 		</div>
   );
