@@ -18,7 +18,7 @@ const Signup = props => {
           <h1>Success</h1>
           <p>A password is sent to your email address.</p>
           <p>
-            Go to <Link to="/">Sign in</Link>
+            Go to <Link onClick={props.changePanel} >Sign in</Link>
           </p>
         </div>
       ) : (

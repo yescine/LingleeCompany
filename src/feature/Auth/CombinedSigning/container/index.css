@@ -18,7 +18,7 @@
 		Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-body {
+/* body {
 	align-items: center;
 	background-color: var(--white);
 	background: url("https://res.cloudinary.com/dwbddafc1/image/upload/v1597151453/background_n6feku.jpg");
@@ -29,7 +29,7 @@ body {
 	display: grid;
 	height: 100vh;
 	place-items: center;
-}
+} */
 
 .form__title {
 	font-weight: 300;
