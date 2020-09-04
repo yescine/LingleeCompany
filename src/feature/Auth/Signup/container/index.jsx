@@ -13,7 +13,7 @@ const Signup = props => {
 
   return (
     <div className={style.signupFormWrapper}>
-      {props.isSuccess ? (
+      {/* {props.isSuccess ? (
         <div className={style.authHeader}>
           <h1>Success</h1>
           <p>A password is sent to your email address.</p>
@@ -21,7 +21,7 @@ const Signup = props => {
             Go to <Link onClick={props.changePanel} >Sign in</Link>
           </p>
         </div>
-      ) : (
+      ) : ( */}
         <SignupForm
           onSubmit={props.signupRequest}
           isLoading={props.isLoading}
@@ -29,7 +29,6 @@ const Signup = props => {
           errorMessage={props.errorMessage}
           changePanel={props.changePanel}
         />
-      )}
     </div>
   );
 };

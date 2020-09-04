@@ -6,6 +6,10 @@ import { Link } from "react-router-dom";
 const SignupFormComponent = props => {
   const { getFieldDecorator } = props.form;
 
+  React.useEffect(()=>{
+    console.log('signupProps',props);
+  },[])
+
   const handleSubmit = e => {
     e.preventDefault();
 
@@ -18,7 +22,7 @@ const SignupFormComponent = props => {
 
   return (
     <Form onSubmit={handleSubmit} className={style.signupForm}>
-      <h1 className={style.authHeader}>Create account</h1>
+      <h1 className={style.authHeader}>Get onboard with us..</h1>
       <Form.Item>
         {getFieldDecorator("name", {
           rules: [
@@ -55,14 +59,15 @@ const SignupFormComponent = props => {
         <Button
           loading={props.isLoading}
           type="primary"
-          style={{ width: "100%" }}
+          style={{ width: "100%",backgroundColor:"#215CE1" }}
           htmlType="submit"
+          
         >
           Sing up
         </Button>
         <div className={style.singupLinks}>
-          <Link onClick={props.changePanel}>Sign in</Link> or{" "}
-          <Link to="/restore-password">Forgot password</Link>
+          {'Have an account? '}
+          <Link onClick={props.changePanel}>Login</Link>
         </div>
       </Form.Item>
     </Form>

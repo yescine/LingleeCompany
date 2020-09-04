@@ -18,7 +18,7 @@ const SigninFormComponent = props => {
 
   return (
     <Form onSubmit={handleSubmit} className={style.signinForm}>
-      <h1 className={style.authHeader}>Sign in</h1>
+      <h1 className={style.authHeader}>Welcom Back!</h1>
       <Form.Item>
         {getFieldDecorator("email", {
           rules: [
@@ -49,17 +49,20 @@ const SigninFormComponent = props => {
         )}
       </Form.Item>
       <Form.Item>
+        <div className={style.singupLinks}>
+          <Link to="/restore-password">Forgot Password</Link>
+        </div>
         <Button
           type="primary"
           loading={props.isLoading}
-          style={{ width: "100%" }}
+          style={{ width: "100%", backgroundColor:'#2676D7'}}
           htmlType="submit"
         >
-          Sign in
+          Login
         </Button>
         <div className={style.singupLinks}>
-          <Link onClick={props.changePanel}>Create accaunt</Link> or{" "}
-          <Link to="/restore-password">Forgot password</Link>
+          {"Don't have an account yet? "}
+          <Link onClick={props.changePanel}>Sign Up</Link>
         </div>
       </Form.Item>
     </Form>
