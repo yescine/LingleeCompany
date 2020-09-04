@@ -65,7 +65,7 @@ const RestorePasswordFormComponent = props => {
         </Button>
         <div className={style.singupLinks}>
           <Link to="/">Sign in</Link> or{" "}
-          <Link to="/signup">Create accaunt</Link>
+          <Link to="/">Create accaunt</Link>
         </div>
       </Form.Item>
     </Form>
