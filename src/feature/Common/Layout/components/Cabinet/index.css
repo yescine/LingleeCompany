@@ -1,0 +1,13 @@
+.cabinetMain{
+   padding: 0.5rem 0.5rem;
+   border-radius: 1rem !important;
+   background-color: #FFFFFF!important;
+
+}
+.ant-layout-footer{
+   background-color: #FFFFFF!important;
+}
+
+.ant-layout-sider{
+   padding-top:2rem;
+}

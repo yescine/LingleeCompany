@@ -3,8 +3,8 @@ import {Grid,Typography,Paper} from '@material-ui/core'
 
 function Card(props) {
    return (
-      <Paper  elevation={4}>
-         <Grid style={{padding:'0.75rem'}} container direction="row" justify="flex-start" alignItems="center">
+      <Paper style={{height:'9rem'}} elevation={4}>
+         <Grid style={{padding:'0.75rem'}} container direction="row" justify="flex-start" alignItems="flex-start">
             <Grid item xs={12} sm={7}>
                <Typography variant="h6" color="primary" >{props.title}</Typography>
                <Typography variant="caption" >{props.children}</Typography>
