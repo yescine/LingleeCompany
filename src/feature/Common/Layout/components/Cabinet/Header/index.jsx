@@ -19,7 +19,7 @@ const HeaderComponent = ({ user, logout }) => {
           key="username"
           title={
             <span>
-              <Avatar size="small" />{" "}
+              <Avatar size="small" icon={<Icon type="user-o" />}/>{" "}
               {user.name} 
             </span>
           }

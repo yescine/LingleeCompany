@@ -20,7 +20,7 @@ const ConfirmRestorePassword = props => {
   return (
     <div className={style.confirmRestorePasswordWrapper}>
       <Loader isLoading={props.isLoading}>
-        {true ? (
+        {props.isSuccess ? (
           <div>
             <h1>Success</h1>
             <p>Password has changed.</p>
