@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Layout, Menu, Icon } from "antd";
+import { Layout, Menu, Icon,Badge } from "antd";
 import PropTypes from "prop-types";
 
 const { Sider } = Layout;
@@ -17,7 +17,13 @@ const SidebarComponent = props => {
           return (
             <Menu.Item key={i}>
               <Link to={item.path}>
-                <Icon type={item.icon} />
+                {item.badge?
+                  <Badge offset={[-25,-2]} size="small" count={2}>
+                    <Icon type={item.icon} />
+                  </Badge> 
+                  :
+                  <Icon type={item.icon} />
+                }
                 <span>{item.label}</span>
               </Link>
             </Menu.Item>
