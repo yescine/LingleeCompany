@@ -4,10 +4,21 @@
    background-color: #FFFFFF!important;
 
 }
-.ant-layout-footer{
+
+.ant-layout-header{
+   border-radius: 1rem;
+   margin-top: 2rem;
+   margin-left: 0.75rem;
+   margin-right: 0.75rem;
    background-color: #FFFFFF!important;
+   color: black;
 }
+
 
 .ant-layout-sider{
    padding-top:2rem;
+}
+
+.ant-layout-footer{
+   background-color: #FFFFFF!important;
 }

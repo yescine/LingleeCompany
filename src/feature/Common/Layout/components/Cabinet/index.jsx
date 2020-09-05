@@ -21,8 +21,8 @@ const CabinetComponent = ({ children, menuList, user, logout }) => {
           <Content
             className={style.cabinetContent}
             style={{
-              background: "#3fff",//#FFFFFF App main display
-              padding: 24,
+              background: "#FFFFFF",//App main display
+              padding: 26,
               minHeight: 300
             }}
           >
