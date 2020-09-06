@@ -1,0 +1,25 @@
+main.ant-layout-content .notFoundWrapper{
+    width: 90%;
+} 
+
+.notFoundWrapper {
+    text-align: center;
+    background-color: #FFFFFF;
+    border-radius: 1.5rem;
+    width: 140%;
+    padding: 1rem 0;
+
+}
+
+h1.notFoundWrapper {
+    font-size: 124px ;
+    font-weight: 600;
+    color: rgba(0,0,0,.84);
+    margin-bottom: 0;
+}
+
+h2.notFoundWrapper{
+    font-size: 44px;
+    color: rgba(0,0,0,.3);
+    fill: rgba(0,0,0,.3);
+}

@@ -7,7 +7,7 @@ export const Auth = ({ children }) => {
   return (
     <div className={style.authLayout}>
       <SquareAnimation />
-      <Row style={{marginTop:'10%',paddingRight:'3%'}}>
+      <Row style={{marginTop:'5%',paddingRight:'3%'}}>
         <Col
           xs={{ span: 16, offset: 1 }}
           sm={{ span: 13, offset: 3 }}
