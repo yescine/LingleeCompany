@@ -20,8 +20,8 @@ const RestorePasswordFormComponent = props => {
 
   return (
     <Grid container direction="row" justify="center" alignItems="center">
-      <Grid item xs={6}>
-        <RestorePasswordSvg/>
+      <Grid item xs={6} style={{height:'90%'}}>
+        <RestorePasswordSvg />
       </Grid>
 
       <Grid item xs={6}>

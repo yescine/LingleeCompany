@@ -1,5 +1,9 @@
 .notFoundWrapper {
     text-align: center;
+    background-color: #FFFFFF;
+    border-radius: 1.5rem;
+    width: 140%;
+    padding: 1rem 0;
 
     h1 {
         font-size: 124px;
@@ -14,3 +18,7 @@
         fill: rgba(0,0,0,.3);
     }
 }
+
+.ant-layout-content .notFoundWrapper{
+    width: 100%!important;
+} 
